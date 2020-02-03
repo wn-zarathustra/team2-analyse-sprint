@@ -1,0 +1,9 @@
+README.md
+setup.py
+team2-analyse/__init__.py
+team2-analyse/analyseSprint.py
+team2_analyse.egg-info/PKG-INFO
+team2_analyse.egg-info/SOURCES.txt
+team2_analyse.egg-info/dependency_links.txt
+team2_analyse.egg-info/requires.txt
+team2_analyse.egg-info/top_level.txt
