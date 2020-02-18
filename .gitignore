@@ -1,3 +1,3 @@
 *.zip
-*.checkpoint.ipnb
+/Draft/.ipynb_checkpoints
 team2-analyse.egg-info
