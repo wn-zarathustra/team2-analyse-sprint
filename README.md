@@ -16,6 +16,12 @@ import pandas.testing
 pip install --upgrade git+https://github.com/wn-zarathustra/team2-analyse-sprint
 
 ##Tests
+To run the test: 
+    1)Download the repository from github
+    2)Load the folder into VSCode
+    3)Run all tests via the VSCode testing environment
+    NB: the package itself needs to be installed for the tests to run automatically and a valid testing environment needs to be active on VSCode such as Pytest.
+
 For successful tests no response will be printed, failed tests will generate an error message.
 
 test_dictionary_of_metrics: checks that the values returned for mean, median, variance, standard deviation, minimum and maximum values are correct.
