@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import pytest
 import pandas.testing as pdt
 
 ebp_url = 'https://raw.githubusercontent.com/Explore-AI/Public-Data/master/Data/electrification_by_province.csv'

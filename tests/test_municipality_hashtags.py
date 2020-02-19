@@ -1,7 +1,6 @@
 from . import analysesprint as ansp
 import pandas as pd
 import numpy as np
-import pytest
 import pandas.testing as pdt
 
 def test_hashtags_and_municipality_in_function_four_dataframe():
