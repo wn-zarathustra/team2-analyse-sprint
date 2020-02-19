@@ -117,10 +117,9 @@ def date_parser(list_dates):
     Returns:
             a new list in the format 'yyy-mm-dd'
     """
-
+    #Splits input into a list
+    #And returns a list of the first value in the split
     return [(item.split(" ")[0]) for item in list_dates]
-
-date_parser(dates[-3:]) == ['2019-11-20', '2019-11-20', '2019-11-20']
 
 def extract_municipality_hashtags(df):
     """ 
@@ -140,15 +139,19 @@ def extract_municipality_hashtags(df):
     municipalityKeys = list(mun_dict.keys())
     municipalities = []
     hashtags = []
-
+    
+    #Iterates through each row in the DataFrame
     for index, row in df.iterrows():
         municipalities.append(np.nan)
+        #Splits each tweet into a list of separate words
         tweet = row['Tweets'].split()
         tags = []
-
+        #Iterates through each word in the tweet list
         for word in tweet:
+            #Extracts all hashtags from list
             if word.startswith('#'):
                 tags.append(word.lower())
+            #Extracts municipality name if present 
             if municipalityKeys.count(word):
                 municipalities[index] = mun_dict[word]
 
@@ -190,8 +193,11 @@ def word_splitter(df):
     """
 
     tokens = []
-
+    #Iterates through each row in the DataFrame
     for index, row in df.iterrows():
+        #Splits each tweet into a list of separate words
+        #Convert each word to lower case
+        #Appends the resulting list to the tokens list
         tokens.append(list(map(str.lower, row['Tweets'].split())))
 
     df['Split Tweets'] = tokens
@@ -217,7 +223,11 @@ def stop_words_remover(df):
 
     for index, row in df.iterrows():
         tempTokens = []
+        #Splits each tweet into a list of separate words
+        #Convert each word to lower case
+        #Appends the resulting list to the tokens list
         for word in list(map(str.lower, row['Tweets'].split())):
+            #Removes any stop words in the list
             if word not in stop_words_dict['stopwords']:
                 tempTokens.append(word)
         nstokens.append(tempTokens)
