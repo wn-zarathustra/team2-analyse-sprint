@@ -1,1 +1,1 @@
-from . import analyseSprint
+from . import analysesprint
