@@ -11,8 +11,10 @@ for col, row in ebp_df.iloc[:,1:].iteritems():
 twitter_url = 'https://raw.githubusercontent.com/Explore-AI/Public-Data/master/Data/twitter_nov_2019.csv'
 twitter_df = pd.read_csv(twitter_url)
 
-# gauteng ebp data as a list
+# gauteng, limpopo and western cape ebp data as a lists
 gauteng = ebp_df['Gauteng'].astype(float).to_list()
+limpopo = ebp_df['Gauteng'].astype(float).to_list()
+western_cape = ebp_df['Gauteng'].astype(float).to_list()
 
 # dates for twitter tweets
 dates = twitter_df['Date'].to_list()
