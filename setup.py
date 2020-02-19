@@ -9,6 +9,6 @@ setup(
     long_description=open('README.md').read(),
     install_requires=['numpy', 'pandas'],
     url='https://github.com/wn-zarathustra/team2-analyse-sprint.git',
-    author='Ahmed Jaffer, Nkosana Luvuyo, Wright Nyoka, Zintle Faltein-Maqubela',
+    author='Ahmed Jaffer, Luvuyo Nkosana, Wright Nyoka, Zintle Faltein-Maqubela',
     author_email='ahmedjaffer007@gmail.com, nkosanaluvuyo@gmail.com, wright.nyoka.ct@gmail.com, zintlefaltein.zf@gmail.com'
 )
