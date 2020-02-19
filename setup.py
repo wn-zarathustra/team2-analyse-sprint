@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='team_two_analyse',
-    version='0.2',
+    version='0.3',
     packages=find_packages(exclude=['tests*']),
     license='MIT',
     description='A package to calculate metrics using Eskom data.',
